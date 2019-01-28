@@ -1,8 +1,9 @@
-authors = ["lwoo1999 <wul@mail.ustc.edu.cn>"]
 name = "NumericalAnalysis"
 uuid = "8ed5351c-22e4-11e9-2c6c-4f89226eccc4"
+authors = ["lwoo1999 <wul@mail.ustc.edu.cn>"]
 version = "0.1.0"
 
 [deps]
-
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

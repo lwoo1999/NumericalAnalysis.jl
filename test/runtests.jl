@@ -1,4 +1,5 @@
 import Test
 using NumericalAnalysis
 
-include("integrate.jl")
+include("Integrate.jl")
+include("Eigen.jl")
