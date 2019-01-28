@@ -44,11 +44,10 @@ function jacobi!(A::Matrix{<:Real}, e::Real)
         Q = Q * S
         A = S' * A * S
     end
-    res = []
-    for i in axes(A, 1)
-        push!(res, (A[i,i], collect(Q[:,i])))
+
+    map(axes(A, 1)) do i
+        A[i,i], collect(Q[:,i])
     end
-    res
 end
 
 function jacobi(A::Matrix{<:Real}, e::Real)::Vector{Tuple{<:Real, Vector{<:Real}}}
